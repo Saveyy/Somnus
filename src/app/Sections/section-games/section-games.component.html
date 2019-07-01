@@ -1,1 +1,27 @@
-<p>I love you fjollehoved</p>
+<div>
+    <h2>
+        Games
+    </h2>
+    <table class="table table-inverse table-hover">
+        <thead class="thead-dard">
+            <tr>
+                <th>Id</th>
+                <th>Game</th>
+                <th>Player1</th>
+                <th>Player 1 points</th>
+                <th>Player2</th>
+                <th>Player 2 points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let game of games">
+                <td>{{ game.id }}</td>
+                <td>{{ game.name }}</td>
+                <td>{{ game.player1.name }}</td>
+                <td>{{ game.player1.points }}</td>
+                <td>{{ game.player2.name }}</td>
+                <td>{{ game.player2.points }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
